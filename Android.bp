@@ -42,9 +42,10 @@ rust_library {
     host_supported: true,
     crate_name: "lock_api",
     cargo_env_compat: true,
-    cargo_pkg_version: "0.4.6",
+    cargo_pkg_version: "0.4.9",
     srcs: ["src/lib.rs"],
     edition: "2018",
+    cfgs: ["has_const_fn_trait_bound"],
     rustlibs: [
         "libscopeguard",
     ],
