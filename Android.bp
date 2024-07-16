@@ -55,8 +55,7 @@ rust_library {
     rustlibs: ["libscopeguard"],
     apex_available: [
         "//apex_available:platform",
-        "com.android.btservices",
-        "com.android.virt",
+        "//apex_available:anyapex",
     ],
     product_available: true,
     vendor_available: true,
